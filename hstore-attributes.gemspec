@@ -16,6 +16,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency('pg')
   gem.add_dependency('activerecord', '>= 3.1')
   gem.add_dependency('activerecord-postgres-hstore', '>= 0.7.0')
+  gem.add_dependency('oj')
 
   gem.add_development_dependency('minitest')
 end

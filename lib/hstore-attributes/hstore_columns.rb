@@ -42,6 +42,7 @@ module HstoreColumns
 
       case type.to_sym
       when :string, :text        then var_name
+      when :symbol               then "#{var_name}.to_sym"
       when :integer              then "(#{var_name}.to_i rescue #{var_name} ? 1 : 0)"
       when :float                then "#{var_name}.to_f"
       when :decimal              then "#{klass}.value_to_decimal(#{var_name})"
