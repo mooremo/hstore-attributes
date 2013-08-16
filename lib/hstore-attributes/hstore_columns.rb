@@ -52,6 +52,7 @@ module HstoreColumns
       when :date                 then "#{klass}.string_to_date(#{var_name})"
       when :binary               then "#{klass}.binary_to_string(#{var_name})"
       when :boolean              then "#{klass}.value_to_boolean(#{var_name})"
+      when :json                 then "Oj.load(#{var_name}) rescue #{var_name}"
       else var_name
       end
     end
