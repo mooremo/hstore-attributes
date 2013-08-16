@@ -1,4 +1,5 @@
 require 'active_support/concern'
+require 'oj'
 
 module HstoreColumns
   extend ActiveSupport::Concern

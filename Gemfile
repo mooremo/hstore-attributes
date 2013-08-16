@@ -6,3 +6,4 @@ gemspec
 gem 'activerecord'
 gem 'activerecord-postgres-hstore'
 gem 'rake'
+gem 'oj'
